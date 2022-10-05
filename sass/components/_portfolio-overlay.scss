@@ -17,6 +17,11 @@
     justify-items: center;
 
     transition: var(--time-function);
+
+    .portfolio__link:hover &, 
+    .portfolio__link:focus & {
+        transform: translateY(0);
+}
 }
 .portfolio-overlay__desc{
     color: var(--main-section-cl);

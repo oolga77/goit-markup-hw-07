@@ -1,4 +1,4 @@
-.clients__list{
+.clients{
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -9,11 +9,7 @@
     width: 170px;
     height: 92px;
 
-    &:hover .clients__link,
-    &:focus .clients__link{
-        border-color: var(--blue-cl);
- }
-
+    
   }
 
 
@@ -28,16 +24,21 @@
 
     transition: border-color var(--time-function), fill var(--time-function);
   
- 
+      &:hover,
+      &:focus{
+        border-color: var(--blue-cl);
+ }
+
   
-        &:hover .clients__icon,
-        &:focus .clients__icon {
-            fill: var(--blue-cl);
-  }
+        
 }
 
    .clients__icon{
     fill: var(--soc-link-cl);
     transition: fill var(--time-function);
 
+        &:hover,
+        &:focus{
+            fill: var(--blue-cl);
+  }
   }

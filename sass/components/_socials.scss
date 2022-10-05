@@ -24,12 +24,14 @@
 
   .socials__icon {
     fill: var(--soc-link-cl);
-    
+       
     transition:  background-color var(--time-function), fill var(--time-function);
+      .socials__link:hover &,
+      .socials__link:focus & {
+          fill: var(--main-section-cl);
+  }
+  
   }
   
 
-  .socials__link:hover .socials__icon,
-  .socials__link:focus .socials__icon {
-    fill: var(--main-section-cl);
-  }
+  
